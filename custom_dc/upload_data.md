@@ -11,20 +11,20 @@ published: true
 Schema files (MCF), data files (CSV) and data specification files (TMCF) are
 stored in Google Cloud Storage (GCS) of the custom Data Commons GCP project.
 These files should be stored based on a desired layout, so data can be processed
-and show up correctly. It's worth to understand a few terms to better understand
-the data layout.
+and show up correctly. To understand the data layout, one should first understand
+the following terms.
 
 ### Data Source
 
-Data source refers to a data agency such as "Census", "World Bank".
+Data source refers to a data agency such as "Census" or "World Bank".
 
 ### Dataset
 
-Dataset does not have a standard definition. The granulairty of a
+Dataset does not have a standard definition. The granularity of a
 dataset varies depending on the sources. For example, one dataset can contain
-public parks information of all the states in USA if they are published
+public parks information of all the states in the USA if they are published
 together. Or if each state publishes this information individually, then there
-are multiple datasets for this topic.
+will be multiple datasets for this topic.
 
 ### Import
 
@@ -46,11 +46,11 @@ shape. One import could have one or multiple tables.
 Consider the following two datasets:
 
 1. State level public park general information in 50 csv files (collected by
-   each state in different format, with size of 5G).
-2. State level public park expenditure with 1 csv file per year (collected by an
-   agency, with size of 5M).
+   each state in different formats, with a size of 5G).
+2. State level public park expenditure with 1 csv file per year (collected by one
+   agency, with a size of 5M).
 
-They can be arranged in multiple ways.
+These datasets can be arranged in multiple ways.
 
 ### Single Import Group
 
